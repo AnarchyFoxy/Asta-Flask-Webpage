@@ -48,3 +48,9 @@
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
   }
+
+  .face {
+    border-radius: 50%;
+    width: 80%;
+    max-width: 80%;
+}
