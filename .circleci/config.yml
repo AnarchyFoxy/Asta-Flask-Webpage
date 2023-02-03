@@ -31,7 +31,7 @@ jobs:
       - run:
           name: Deploy to Cloud Build Production
           command: |
-            gcloud builds submit --async --config=cloudbuild.yaml .
+            gcloud builds submit --async --config=cloudbuild/cloudbuild.yaml .
          
 workflows:
   version: 2.1
