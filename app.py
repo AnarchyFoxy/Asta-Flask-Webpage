@@ -12,3 +12,4 @@ if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port = port)
 
 # flask --app app run
+# gunicorn --bind=0.0.0.0:2023 app:app
