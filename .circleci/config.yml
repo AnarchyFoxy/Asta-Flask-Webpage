@@ -27,14 +27,11 @@ jobs:
         default: GCLOUD_SERVICE_KEY
     steps:
       - checkout
-      - gcp-cli/install
       - gcp-cli/setup
-          # google-project-id: << parameters.google-project-id >>
-          # gcloud-service-key: << parameters.gcloud-service-key >>
       - run:
           name: Deploy to Cloud Build Production
           command: |
-            gcloud builds submit --async --config=cloudbuild/cloudbuild.yaml .
+            gcloud builds submit --async --config=cloudbuild.yaml .
          
 workflows:
   version: 2.1
