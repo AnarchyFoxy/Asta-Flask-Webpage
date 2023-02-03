@@ -13,7 +13,7 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'astryda-webpage', '--image', 'gcr.io/$PROJECT_ID/$BUILD_ID', '--region', 'europe-north1']
+  args: ['run', 'deploy', 'asta-website', '--image', 'gcr.io/$PROJECT_ID/$BUILD_ID', '--region', 'europe-north1']
 
 images:
 - gcr.io/$PROJECT_ID/$BUILD_ID
